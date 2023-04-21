@@ -12,3 +12,8 @@
 
 // 입력 : 3849
 // 출력 : 24
+
+const data = prompt('숫자를 입력하시오').split('').map(Number);
+const result = data.reduce((a,b) => (a+b));
+
+console.log(result);
