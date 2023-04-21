@@ -11,10 +11,16 @@
 // 출력
 // 4
 
+// 방법1 - findIndex()
 const n = prompt('영어문장을 입력해주세요').split('');
 const findWord = prompt('찾을 영어단어를 입력해주세요');
 const result = n.findIndex((element) => element === findWord[0]);
 console.log(result);
+
+// 다른 방법 indexof() - 주어진 값과 일치하는 요소의 첫번째 인덱스 구할 때
+const data = prompt('영어문장을 입력해주세요');
+const word = prompt('찾을 영어단어를 입력해주세요');
+console.log(data.indexOf(word));
 
 
 
