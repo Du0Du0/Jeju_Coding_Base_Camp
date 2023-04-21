@@ -6,14 +6,16 @@
 // 입력 : 2
 // 출력 : 2 4 6 8 10 12 14 16 18
 
+const n = prompt('숫자를 입력하시오');
+let result = '';
 
 function 구구단(n) {
     for (let i =1; i <= 9; i++ ) {
-        arr = n * i ;
-        console.log(arr);
+        result += n*i + ' ';
     }
 }
 
-const n = prompt('숫자를 입력하시오');
 구구단(n);
+console.log(result);
+
 
